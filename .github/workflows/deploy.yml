@@ -40,7 +40,14 @@ jobs:
           aws-region: us-east-1
 
       - name: Upload site to S3
-        run: aws s3 sync .output/public/ s3://kive-media/luvhere-app/ --delete
+        run: |
+          # Assets: let the CLI infer types, but don't touch HTML here
+          aws s3 sync .output/public/ s3://kive-media/luvhere-app/ --delete --exclude "*.html"
+          # HTML: always re-upload with an explicit content type so browsers render instead of download
+          aws s3 cp .output/public/ s3://kive-media/luvhere-app/ --recursive \
+            --exclude "*" --include "*.html" \
+            --content-type "text/html; charset=utf-8" \
+            --cache-control "no-cache"
 
       - name: Invalidate CloudFront cache
         run: aws cloudfront create-invalidation --distribution-id "$CLOUDFRONT_DISTRIBUTION_ID" --paths '/*'
