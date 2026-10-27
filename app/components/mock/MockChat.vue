@@ -1,40 +1,35 @@
+<!-- A match chat, as MatchChatScreen draws it. -->
 <script setup lang="ts">
-import { ChevronLeft, EyeOff, Bookmark, Mic, Image as ImageIcon } from 'lucide-vue-next'
+import { ChevronLeft, MoreHorizontal, ShieldCheck, Clock } from 'lucide-vue-next'
 </script>
 
 <template>
-  <div class="relative flex h-full flex-col">
-    <div class="flex items-center gap-2.5 border-b border-line px-3 pb-3 pt-2">
-      <ChevronLeft class="h-5 w-5 text-soft" />
-      <div class="relative h-9 w-9 rounded-full p-[1.5px] bg-brand">
-        <div class="h-full w-full rounded-full" style="background: linear-gradient(150deg, #8a5a6e, #2a1d30)" />
-        <span class="absolute bottom-0 right-0 h-2.5 w-2.5 rounded-full border-2 border-ground bg-success" />
+  <ChatChrome>
+    <template #header>
+      <div class="flex items-center gap-[9px] px-[14px] pb-[14px] pt-[6px]">
+        <ChevronLeft class="h-[22px] w-[22px] text-pink" />
+        <div class="relative h-[35px] w-[35px] shrink-0">
+          <span class="block h-full w-full rounded-full" style="background: radial-gradient(circle at 50% 38%, #d9a08c 0 26%, transparent 27%), linear-gradient(160deg, #6a3b5c, #2a1d30)" />
+          <span class="absolute bottom-[1px] right-0 h-[9px] w-[9px] rounded-full border-[1.5px] border-ground bg-success" />
+        </div>
+        <div class="min-w-0 flex-1">
+          <p class="flex items-center gap-[3px] text-[13px] font-semibold leading-[17px] text-ink">Aanya <ShieldCheck class="h-[10px] w-[10px] text-pink" /></p>
+          <p class="text-[9.5px] leading-[13px] text-value">Online now</p>
+        </div>
+        <MoreHorizontal class="h-[17px] w-[17px] text-pink" />
       </div>
-      <div class="leading-tight">
-        <p class="text-[13px] font-semibold text-ink">Aanya, 26</p>
-        <p class="text-[10px] text-success">Online</p>
-      </div>
-      <span class="ml-auto flex items-center gap-1 rounded-full border border-pink/30 bg-pink/10 px-2 py-1 text-[9px] font-semibold text-pink"><EyeOff class="h-3 w-3" />Seen once</span>
-    </div>
+    </template>
 
-    <div class="flex-1 space-y-2.5 overflow-hidden px-3 pt-4 text-[12px]">
-      <p class="text-center text-[10px] text-quiet">You matched · today</p>
-      <div class="max-w-[78%] rounded-2xl rounded-bl-md bg-elevated px-3 py-2 text-value">Hey! A fellow hiker 🏔️ What’s your favourite trail?</div>
-      <div class="ml-auto max-w-[78%] rounded-2xl rounded-br-md bg-brand px-3 py-2 text-white">Triund, every monsoon. You?</div>
-      <div class="max-w-[78%] rounded-2xl rounded-bl-md bg-elevated px-3 py-2 text-value">Kedarkantha in winter. Coffee first, trek later?</div>
-      <div class="ml-auto flex max-w-[82%] items-center gap-2 rounded-2xl rounded-br-md border border-pink/30 bg-pink/10 px-3 py-2 text-ink">
-        <Bookmark class="h-3.5 w-3.5 shrink-0 fill-pink text-pink" /> Saturday at 11? 😊
-      </div>
-      <p class="pr-1 text-right text-[9px] text-quiet">Saved · stays after you leave</p>
-      <div class="mx-auto mt-2 flex w-fit items-center gap-1.5 rounded-full border border-line px-3 py-1.5 text-[10px] text-quiet">
-        <EyeOff class="h-3 w-3" /> Earlier messages disappeared once seen
-      </div>
+    <div class="my-[6px] flex justify-center"><span class="rounded-full bg-white/[0.07] px-[14px] py-[4px] text-[9.5px] text-[#E4DEEA]">Today</span></div>
+    <div class="my-[3px] flex justify-center">
+      <span class="flex max-w-[88%] items-center gap-[3px] rounded-full bg-white/[0.06] px-[9px] py-[4px] text-[9.5px] text-soft"><Clock class="h-[9px] w-[9px] shrink-0" />You set messages to disappear after seen once</span>
     </div>
-
-    <div class="mx-3 mb-4 flex items-center gap-2 rounded-full border border-line bg-surface px-3 py-2.5">
-      <ImageIcon class="h-4 w-4 text-soft" />
-      <span class="flex-1 text-[11px] text-quiet">Message…</span>
-      <Mic class="h-4 w-4 text-soft" />
+    <ChatBubble avatar show-avatar time="9:40 PM">Hey! A fellow hiker 🏔️ What’s your favourite trail?</ChatBubble>
+    <ChatBubble mine time="9:41 PM" status="read">Triund, every monsoon. You?</ChatBubble>
+    <ChatBubble avatar show-avatar time="9:42 PM">Kedarkantha in winter. Coffee first, trek later?</ChatBubble>
+    <ChatBubble mine saved time="9:43 PM" status="delivered">Saturday at 11? 😊</ChatBubble>
+    <div class="flex w-fit items-center gap-[4px] rounded-[14px] border-[0.5px] border-white/[0.14] bg-elevated px-[11px] py-[9px]">
+      <span v-for="i in 3" :key="i" class="h-[5px] w-[5px] rounded-full bg-soft" :class="i === 2 ? 'opacity-100' : 'opacity-50'" />
     </div>
-  </div>
+  </ChatChrome>
 </template>

@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { ShieldCheck, EyeOff, Heart } from 'lucide-vue-next'
+import { ShieldCheck, EyeOff, VenetianMask } from 'lucide-vue-next'
 const points = [
   { icon: ShieldCheck, label: 'Selfie-verified people' },
-  { icon: EyeOff, label: 'Photos veiled until you match' },
-  { icon: Heart, label: 'Chat only on a mutual like' },
+  { icon: EyeOff, label: 'Blur your photos until you match' },
+  { icon: VenetianMask, label: 'Anonymous chat, reveal on your terms' },
 ]
 </script>
 
@@ -16,11 +16,11 @@ const points = [
       <div class="reveal">
         <p class="eyebrow mb-5">Privacy-first dating<span class="hidden sm:inline"> · Launching in India</span></p>
         <h1 class="text-[34px] font-bold leading-[1.08] tracking-tight sm:text-[46px] xl:text-[56px]">
-          Fall for who they are,
-          <span class="text-title block">before how they look.</span>
+          Real people.
+          <span class="text-title block">Your privacy, your pace.</span>
         </h1>
         <p class="mt-6 max-w-xl text-[18px] leading-8 text-soft">
-          Luvhere shows you real, verified people — without their photos or names. Like someone for their interests and vibe. Profiles open up only when you both like each other.
+          Every member on Luvhere passes a live selfie check. See how compatible you are on every profile, chat only after a mutual like — or talk anonymously first and reveal yourself when you’re ready.
         </p>
         <div id="download" class="mt-9 scroll-mt-28"><StoreButtons /></div>
         <ul class="mt-10 flex flex-wrap gap-x-6 gap-y-3">

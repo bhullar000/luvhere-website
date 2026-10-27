@@ -48,6 +48,14 @@ jobs:
             --exclude "*" --include "*.html" \
             --content-type "text/html; charset=utf-8" \
             --cache-control "no-cache"
+          # Clean URLs: S3 won't map /safety to safety/index.html, so also store each page at its bare path
+          cd .output/public
+          find . -mindepth 2 -name index.html | while read -r page; do
+            route="${page#./}"; route="${route%/index.html}"
+            aws s3 cp "$page" "s3://kive-media/luvhere-app/$route" \
+              --content-type "text/html; charset=utf-8" \
+              --cache-control "no-cache"
+          done
 
       - name: Invalidate CloudFront cache
         run: aws cloudfront create-invalidation --distribution-id "$CLOUDFRONT_DISTRIBUTION_ID" --paths '/*'

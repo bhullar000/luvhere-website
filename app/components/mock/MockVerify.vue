@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ShieldCheck, Check } from 'lucide-vue-next'
-const steps = ['Phone number', 'Live selfie', 'Photo review']
+const steps = ['Phone number', 'Live selfie', 'Photos match your face']
 </script>
 
 <template>

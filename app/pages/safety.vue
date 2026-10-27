@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import { ScanFace, EyeOff, HeartHandshake, Flag, Coffee, Users, Wallet, Link2, Phone, MessageSquareWarning } from 'lucide-vue-next'
-usePageMeta('Safety', 'How Luvhere keeps dating safe: live selfie verification, veiled photos, mutual-like chat, block and report — plus tips for meeting in person.')
+usePageMeta('Safety', 'How Luvhere keeps dating safe: live selfie verification, photos matched to your face, blurred photos until you match, mutual-like chat, block and report — plus tips for meeting in person.')
 useReveal()
 const { supportEmail } = useSite()
 
 const built = [
-  { icon: ScanFace, title: 'Verified members', body: 'Phone verification and a live selfie check before you meet anyone.' },
-  { icon: EyeOff, title: 'Veiled until matched', body: 'Your photos are blurred on our servers for people you haven’t matched with.' },
-  { icon: HeartHandshake, title: 'Mutual consent to chat', body: 'Only people you liked back can message you.' },
-  { icon: Flag, title: 'Block & report', body: 'From any profile or chat. Blocked people can’t find or contact you.' },
+  { icon: ScanFace, title: 'Verified members', body: 'Phone verification and a live selfie check, and every photo is matched to the face that passed it.' },
+  { icon: EyeOff, title: 'Blur until matched', body: 'Verified members can blur their photos on Discover. They’re blurred on our servers for anyone you haven’t matched with.' },
+  { icon: HeartHandshake, title: 'Mutual consent to chat', body: 'Only people you liked back can message you. In anonymous chat, you choose if and when to reveal yourself.' },
+  { icon: Flag, title: 'Block & report', body: 'From any chat or your Likes. Blocked people can’t find or contact you.' },
 ]
 const tips = [
   { icon: Link2, title: 'Keep it on Luvhere', body: 'Stay in the app’s chat until you trust someone. Be wary of anyone who rushes you to another app.' },

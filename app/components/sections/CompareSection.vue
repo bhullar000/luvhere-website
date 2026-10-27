@@ -1,18 +1,19 @@
 <script setup lang="ts">
 import { X, Check } from 'lucide-vue-next'
 const rows = [
-  ['Judged on a photo in a split second', 'Interests and compatibility come first'],
-  ['Your photos are visible to everyone', 'Photos stay veiled until you match'],
+  ['Judged on a photo in a split second', 'Compatibility and shared interests on every card'],
+  ['Your photos are visible to everyone', 'Blur your photos until you match'],
   ['Anyone can be anyone', 'Every member passes a live selfie check'],
+  ['Strangers can fill your inbox', 'Chat only after a mutual like'],
   ['Conversations stay forever', 'Messages can disappear once seen'],
-  ['Endless swiping on looks', 'Fewer, more meaningful matches'],
+  ['Show everything or nothing', 'Chat anonymously and reveal when you choose'],
 ]
 </script>
 
 <template>
   <section class="py-20 md:py-28">
     <div class="container-site">
-      <SectionHeading eyebrow="Why Luvhere" title="Dating, without the shop window." lead="Most apps put your face first. We put it last — so the people who reach you are drawn to who you are." center />
+      <SectionHeading eyebrow="Why Luvhere" title="Dating, without the shop window." lead="Most apps put everything on show the moment you sign up. On Luvhere you decide who sees what, and when." center />
       <div class="reveal mx-auto mt-12 max-w-4xl overflow-hidden rounded-card border border-line">
         <div class="grid grid-cols-2 bg-surface text-[13px] font-semibold uppercase tracking-wider">
           <p class="px-5 py-4 text-quiet md:px-7">Typical swipe apps</p>

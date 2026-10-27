@@ -18,7 +18,7 @@ const { supportEmail } = useSite()
             <li><strong>Account:</strong> your mobile number, used to sign in with a one-time code.</li>
             <li><strong>Profile:</strong> name, date of birth, gender, who you’re interested in, bio, interests, lifestyle details and photos.</li>
             <li><strong>Verification:</strong> a live selfie video check, used to confirm you are a real person and match your photos.</li>
-            <li><strong>Messages:</strong> chats, photos and voice notes you send to matches.</li>
+            <li><strong>Messages:</strong> the messages you send in match chats and anonymous chats, and when they were delivered and read.</li>
             <li><strong>Reports and support:</strong> what you tell us when you report someone or contact support.</li>
           </ul>
           <h3>Information collected as you use Luvhere</h3>
@@ -42,11 +42,11 @@ const { supportEmail } = useSite()
           <p>We do not sell your personal data, and we do not use your photos or messages for advertising.</p>
 
           <h2>4. Photos and privacy by design</h2>
-          <p>Until you and another member match, they see only a veiled version of your photo, which is blurred on our servers. The original photo is not sent to their device. Messages you set to “seen once” are removed from the chat after they are read.</p>
+          <p>If you are verified and turn on “Blur my photos on Discover”, people you haven’t matched with see only a blurred version of your photos, made on our servers; the original photo is not sent to their device. In anonymous chat, the other person sees your name, photos and profile details only if you choose to reveal them. Messages you set to disappear after 24 hours or after being seen once are removed from the chat, unless one of you saves them.</p>
 
           <h2>5. Who we share it with</h2>
           <ul>
-            <li><strong>Other members:</strong> the profile details you choose to show, and your photos once you match.</li>
+            <li><strong>Other members:</strong> the profile details and photos you choose to show on Discover and to your matches, and in anonymous chat only what you choose to reveal.</li>
             <li><strong>Service providers</strong> who help us run Luvhere, under contract: cloud hosting and storage, identity and photo verification, SMS delivery of login codes, push notifications and payments.</li>
             <li><strong>Authorities,</strong> when required by law or to protect someone’s safety.</li>
           </ul>

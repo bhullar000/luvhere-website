@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import { ScanFace, EyeOff, HeartHandshake, VenetianMask, Timer, Flag, MapPin, Mic, UserX } from 'lucide-vue-next'
+import { ScanFace, EyeOff, HeartHandshake, VenetianMask, Timer, Flag, SlidersHorizontal, CheckCheck, UserX } from 'lucide-vue-next'
 const features = [
-  { icon: ScanFace, title: 'Live selfie verification', body: 'A liveness check confirms there’s a real person behind every profile.' },
-  { icon: EyeOff, title: 'Veiled photos', body: 'Before you match, photos are blurred on our servers — the real image never reaches anyone’s phone.' },
+  { icon: ScanFace, title: 'Live selfie verification', body: 'A liveness check confirms a real person is behind every profile, and every photo is matched to that face.' },
+  { icon: EyeOff, title: 'Blur my photos', body: 'Verified members can blur their photos on Discover. They’re blurred on our servers, so the clear photo only reaches people you match with.' },
   { icon: HeartHandshake, title: 'Mutual likes only', body: 'Nobody can message you unless you liked them back. No unwanted inboxes.' },
-  { icon: VenetianMask, title: 'Anonymous chat', body: 'Talk under a nickname first. Reveal who you are only when you’re ready.' },
-  { icon: Timer, title: 'Seen-once messages', body: 'Let messages disappear after they’re read — and save the ones you want to keep.' },
-  { icon: MapPin, title: 'Nearby, not pinpointed', body: 'Suggestions use distance, never your exact location.' },
-  { icon: Mic, title: 'Photos & voice notes', body: 'Real-time chat with photos, voice messages, read receipts and online status.' },
-  { icon: Flag, title: 'Block & report', body: 'One tap to block or report. Our team reviews every report.' },
-  { icon: UserX, title: 'You’re in control', body: 'Pause your profile with Deactivate, or delete your account and data any time.' },
+  { icon: VenetianMask, title: 'Anonymous chat', body: 'Get matched on compatibility and talk without names or photos. Ask them to reveal, or reveal yourself — each side decides for itself.' },
+  { icon: Timer, title: 'Disappearing messages', body: 'Keep messages, have them vanish after 24 hours, or after they’re seen once. Save any message you want to keep.' },
+  { icon: CheckCheck, title: 'Real-time chat', body: 'Typing indicators and WhatsApp-style ticks: sent, delivered and read.' },
+  { icon: SlidersHorizontal, title: 'Your filters', body: 'Choose how far away and what age range you want to see, right from Discover.' },
+  { icon: Flag, title: 'Block & report', body: 'Block or report from any chat or from your Likes. Our team reviews every report.' },
+  { icon: UserX, title: 'You’re in control', body: 'Hide from Likes or from anonymous chat, pause your profile, or delete your account and data any time.' },
 ]
 </script>
 

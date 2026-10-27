@@ -1,5 +1,5 @@
 const title = 'Luvhere — Privacy-first dating'
-const description = 'Meet verified people for who they are. Luvhere hides photos and names until you both like each other, so connections start with personality.'
+const description = 'Meet selfie-verified people near you. Blur your photos until you match, chat only on a mutual like, or talk anonymously and reveal yourself when you’re ready.'
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-01-01',
@@ -12,10 +12,10 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      siteUrl: 'https://luvhere.app',
+      siteUrl: 'https://luvhere.com',
       appStoreUrl: '',
       playStoreUrl: '',
-      supportEmail: 'support@luvhere.app',
+      supportEmail: 'support@luvhere.com',
     },
   },
 

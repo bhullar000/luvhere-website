@@ -8,8 +8,8 @@ import { ArrowRight } from 'lucide-vue-next'
       <FeatureSplit
         eyebrow="Trust & safety"
         title="Real people. Verified, every time."
-        lead="Fake profiles ruin dating. So every member on Luvhere verifies their phone and passes a live selfie check, and every photo is reviewed before anyone sees it."
-        :points="['Liveness check — a photo of a photo won’t pass', 'Automatic photo moderation before photos go live', 'Reports reviewed by a real team', 'Blocked people can never see or contact you again']"
+        lead="Fake profiles ruin dating. So every member on Luvhere verifies their phone and passes a live selfie check, and every photo has to match the face that passed it."
+        :points="['Liveness check — a photo of a photo won’t pass', 'Photos matched to your selfie and screened before they go live', 'Reports reviewed by a real team', 'Blocked people can never see or contact you again']"
       >
         <PhoneFrame><MockVerify /></PhoneFrame>
         <template #cta>

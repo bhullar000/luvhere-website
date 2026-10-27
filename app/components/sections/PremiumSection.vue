@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { Check, Crown } from 'lucide-vue-next'
-const free = ['Verified profile', 'Unlimited anonymous discovery', 'Likes and mutual matches', 'Start chatting with every match', 'Block, report and privacy controls']
-const premium = ['More messages in every chat', 'See who already likes you', 'Advanced filters', 'Priority in discovery', 'Secure payments, cancel any time']
+const free = ['Verified profile', 'Discover with daily likes', 'Mutual matches and chat', 'Anonymous chat', 'Block, report and privacy controls']
+const premium = ['Unlimited likes', 'See who already likes you', 'Unlimited messages with your matches', 'More anonymous chats and messages', 'Secure payments, cancel any time']
 </script>
 
 <template>

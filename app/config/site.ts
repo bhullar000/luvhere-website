@@ -15,24 +15,28 @@ export const legal = [
 
 export const faqs = [
   {
-    q: 'Why can’t I see photos straight away?',
-    a: 'Because a photo is a split-second judgement. On Luvhere you first see someone’s age, distance, interests and what you have in common. Their photo stays veiled — blurred on our servers, so the real image never reaches your phone — until you both like each other.',
+    q: 'Who can see my photos?',
+    a: 'By default, people see your photos on Discover. If you’re verified, you can turn on “Blur my photos on Discover” in your profile: your photos are then blurred on our servers, so the clear image only reaches people you match with. In anonymous chat nobody sees your photos until you reveal your profile.',
   },
   {
     q: 'How do you know people are real?',
-    a: 'Every member signs in with a verified phone number, and a live selfie check confirms the real person behind the profile. Accounts that fail verification, or that others report, are reviewed by our team.',
+    a: 'Every member signs in with a verified phone number and takes a live selfie check, and every photo they add is matched against that face. You need at least one photo before you can like anyone. Accounts that others report are reviewed by our team.',
   },
   {
     q: 'When can I start chatting?',
-    a: 'Only after a mutual like. Nobody can message you unless you liked them back, so your inbox only has people you chose.',
+    a: 'After a mutual like, in Matches. Nobody can message you there unless you liked them back. You can also start a conversation in anonymous chat, where neither of you sees the other’s name or photos.',
   },
   {
-    q: 'What are seen-once messages?',
-    a: 'In a chat you can choose to have messages disappear once they have been read and you both leave the chat. Want to keep something? Save it before you go.',
+    q: 'How does revealing work in anonymous chat?',
+    a: 'Each person decides for themselves. You can ask the other person to reveal, and they answer with one tap. You can also reveal your own profile at any time: they see your photos and details straight away, and you see theirs only when they reveal too.',
+  },
+  {
+    q: 'What are disappearing messages?',
+    a: 'In any chat you can keep messages, have them disappear after 24 hours, or after they’ve been seen once. Either of you can change it, and both of you are told in the chat. Want to keep something? Save it, and it stays for both of you.',
   },
   {
     q: 'Is Luvhere free?',
-    a: 'Yes — creating a profile, discovering people, liking and matching are free. Premium is optional and adds things like more messages per chat. Current prices are always shown in the app before you pay.',
+    a: 'Yes. Creating a profile, discovering people, daily likes, matching, chatting and anonymous chat are all free, with daily limits. Premium is optional and removes them: unlimited likes and messages, and seeing who already likes you. Current prices are always shown in the app before you pay.',
   },
   {
     q: 'Where is Luvhere available?',
